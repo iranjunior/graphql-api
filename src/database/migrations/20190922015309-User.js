@@ -6,8 +6,7 @@ module.exports = {
       id: {
         type: Sequelize.STRING,
         primaryKey: true,
-        autoIncrement: false,
-        allowNull: false
+        autoIncrement: false
       },
       name: {
         type: Sequelize.STRING,
@@ -22,11 +21,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      created_at: {
+      createdAt: {
         type: Sequelize.DATE,
         allowNull: false
       },
-      updated_at: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false
       }

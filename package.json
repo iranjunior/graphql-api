@@ -22,10 +22,13 @@
     "nodemon": "^1.19.2"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "graphql": "^14.5.6",
     "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
     "merge-graphql-schemas": "^1.7.0",
     "pg": "^7.12.1",
-    "sequelize": "^5.18.4"
+    "sequelize": "^5.18.4",
+    "short-uuid": "^3.1.1"
   }
 }
