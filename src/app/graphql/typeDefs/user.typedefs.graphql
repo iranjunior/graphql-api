@@ -9,8 +9,9 @@ type User {
 
 type Query {
   users: [User!]!
-  user: User!
+  user(email: String): User!
 }
 type Mutation {
     storeUser(name: String, email: String, password: String): User
+    # updateUser(id: String, name: String, email: String, password: String): User
 }

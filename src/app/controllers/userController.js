@@ -16,5 +16,19 @@ module.exports = {
     const users = await Users.findAll()
 
     return users
-  }
+  },
+  show: async (email) => {
+    const user = await Users.findOne({ where: { email } })
+
+    return user
+  }/* ,
+  update: async (user) => {
+    console.log('user before:', user)
+    const users = await Users.update(user, { where: { id: user.id } })
+    console.log('user :', users)
+    user = await Users.findOne({ where: { email: users.email } })
+
+    return user
+  } */
+
 }
