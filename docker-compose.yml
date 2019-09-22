@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+    postgres:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: p@ss!pg
+
+    app:
+        build: .
+        restart: always
+        tty: true
+        ports:
+            - "4000:4000"
+        depends_on:
+            - postgres
