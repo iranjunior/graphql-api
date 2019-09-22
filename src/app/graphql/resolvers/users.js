@@ -2,8 +2,9 @@ const userController = require('../../controllers/userController')
 
 module.exports = {
   Query: {
-    hello: (_) => {
-      return 'Hello World'
+    users: async (root) => {
+      const users = await userController.index()
+      return users
     }
   },
   Mutation: {

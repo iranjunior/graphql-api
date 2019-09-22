@@ -11,5 +11,10 @@ module.exports = {
     const users = await Users.create(user)
 
     return users
+  },
+  index: async () => {
+    const users = await Users.findAll()
+
+    return users
   }
 }
